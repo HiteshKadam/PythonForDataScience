@@ -5,4 +5,9 @@
 3: set - unique {-,-,-,-}
 4: dict - key-value {-:-,-:-,}
 """
+empty = list()
+print(empty)
+
+letters = list('Python')
+print(letters)
 
