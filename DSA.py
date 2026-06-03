@@ -117,4 +117,14 @@ comb1 = list(zip(letters, numbers))
 print(comb1)
 
 # Iterators
-print(list(enumerate(letters)))
+print(list(enumerate(letters, start=1)))
+
+
+for index, value in enumerate(letters):
+   print(index, value)
+
+
+
+for l, n in zip(letters, numbers):
+   print(n, l)
+
