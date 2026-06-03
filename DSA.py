@@ -5,6 +5,7 @@
 3: set - unique {-,-,-,-}
 4: dict - key-value {-:-,-:-,}
 """
+import copy
 
 # Create
 empty = list()
@@ -81,3 +82,39 @@ letters.insert(0,'z')
 print(letters)
 
 #remove items
+# letters.clear()
+letters.remove('z')
+letters.pop(0)
+print(letters)
+
+#update items
+letters[2] = 'l'
+print(letters)
+
+#sort
+print(numbers)
+# numbers.sort(reverse=True)
+# print(sorted(numbers, reverse=False))
+# print(numbers)
+
+# numbers.reverse()
+print(list(reversed(numbers)))
+
+
+# Copy
+original = ['a','b','c']
+cpy_list = original
+
+cpy_list_1 = original.copy()
+
+cpy_list_2 = copy.deepcopy(original)
+
+
+#Combining
+comb = letters + numbers
+print(comb)
+comb1 = list(zip(letters, numbers))
+print(comb1)
+
+# Iterators
+print(list(enumerate(letters)))
