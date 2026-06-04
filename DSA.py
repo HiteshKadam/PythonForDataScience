@@ -128,3 +128,36 @@ for index, value in enumerate(letters):
 for l, n in zip(letters, numbers):
    print(n, l)
 
+
+letters = ['a','','c',None, False]
+print(list(filter(None, letters)))
+
+items = ['sql','123','pythin','42']
+print(list(filter(str.isalpha, items)))
+
+#Lambda
+multiple = lambda x: x*2
+print(multiple(5))
+
+add = lambda x,y : x + y
+print(add(3,4))
+
+check = lambda i: i in "python"
+print(check("n"))
+
+prices = ['$12.50','$9.99','$100.00']
+p = '$12.50'
+
+print(list(map(lambda p : float(p.replace('$','')),prices)))
+
+prices = [120,30,300,80]
+print(list(filter(lambda p : p>=100, prices)))
+
+domains = ['www.google.com','localhost','openai.com','WWW.DATAWITHHITESH.COM']
+
+cleaned = [
+   d.lower().replace('www.','')
+   for d in domains
+   if '.' in d
+]
+print(cleaned)
