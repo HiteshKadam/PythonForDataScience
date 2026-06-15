@@ -1,7 +1,7 @@
 import uproot
 import pandas as pd
 
-file = uproot.open("mupar20130402.root")
+file = uproot.open("../mupar20130402.root")
 
 print(file.values())
 
