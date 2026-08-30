@@ -21,4 +21,5 @@ axs[1,1].set_xlabel("TEST")
 
 fig.suptitle("Four Subplots")
 plt.tight_layout()
-plt.savefig("four.png", dpi=300, transparent=False, pad_inches=20)
+plt.show()
+# plt.savefig("four.png", dpi=300, transparent=False, pad_inches=20)
