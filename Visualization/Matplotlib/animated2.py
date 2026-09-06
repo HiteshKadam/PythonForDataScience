@@ -6,7 +6,7 @@ ax = plt.axes(projection='3d')
 x = np.arange(-5,5,0.1)
 y = np.arange(-5,5,0.1)
 X, Y = np.meshgrid(x, y)
-Z = np.cos(X) + np.cos(Y)
+Z = np.sin(X) + np.cos(Y)
 
 ax.plot_surface(X, Y, Z,cmap = "Spectral")
 ax.set_xlabel("x")
